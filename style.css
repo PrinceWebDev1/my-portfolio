@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Vina+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#board {
+    height: 1024px;
+    width: 1440px;
+    background-image: url(assets/background.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#outline {
+    height: 869px;
+    width: 1400px;
+    background-color: transparent;
+    border: 2px solid white;
+    position: relative;
+}
+
+.pinned-items {
+    position: absolute;
+    width: 200px;
+    height: 250px;
+    background-color: transparent;
+}
+
+.pins {
+    height: 18px;
+    width: 18px;
+    background-image: url(assets/pins.svg);
+    background-size: contain;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.psychological-profile {
+    top: 285px;
+    left: 600px;
+    background-color: white;
+}
+
+.psychological-profile .img {
+    height: 180px;
+    width: 180px;
+    position: relative;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: aqua;
+    z-index: 3;
+}
+
+.psychological-profile p {
+    position: relative;
+    top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.clothing {
+    top: 50px;
+    left: 50px;
+    background-image: url(assets/sabera.svg);
+}
+
+.landing-page {
+    top: 250px;
+    left: 310px;
+    background-image: url(assets/uwwa.svg);
+}
+
+.quiz-app {
+    top: 470px;
+    left: 80px;
+    background-image: url(assets/quizine.svg);
+}
+
+.weather-app {
+    top: 570px;
+    left: 350px;
+    background-image: url(assets/weather.svg);
+}
+
+.current-skills {
+    top: 100px;
+    right: 50px;
+    background-image: url(assets/skills.svg);
+}
+
+.cv {
+    top: 310px;
+    right: 310px;
+    background-image: url(assets/cv.svg);
+}
+
+.contact {
+    top: 520px;
+    right: 50px;
+    background-color: white;
+    padding: 10px;
+}
+
+.contact h1 {
+    font-family: 'courier new', Courier, monospace;
+    font-size: 26px;
+    margin: 10px;
+}
+
+.contact-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
+
+.contact-options a {
+    font-family: 'noto sans', sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.contact-options p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.note {
+    position: absolute;
+    top: 50px;
+    right: 500px;
+    height: 100px;
+    width: 200px;
+    background-color: white;
+}
+
+.note .wrapper {
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+}
+
+.note p {
+    font-family: caveat;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 18px;
+}
+
+.note a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+svg {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 6;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.notification {
+    height: 50px;
+    width: 202px;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(229, 229, 229);
+    color: black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    pointer-events: none;
+    opacity: 0;
+}
