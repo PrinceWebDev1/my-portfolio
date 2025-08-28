@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Vina+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 * {
     margin: 0;
@@ -34,7 +36,7 @@ html {
     position: absolute;
     width: 200px;
     height: 250px;
-    background-color: transparent;
+    background-color: white;
 }
 
 .pins {
@@ -79,36 +81,101 @@ html {
 .clothing {
     top: 50px;
     left: 50px;
-    background-image: url(assets/sabera.svg);
+}
+
+.project-content {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.project-content h1 {
+    font-family: 'grenze gotisch', serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.project-content .divider {
+    height: 3px;
+    width: 180px;
+    background-color: #333;
+    margin-bottom: 8px;
+}
+
+.project-content img {
+    height: 84px;
+    width: 178px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.project-content p {
+    font-family: 'times new roman', Times, serif;
+    font-size: 16px;
+    text-align: center;
+    text-align: left;
 }
 
 .landing-page {
     top: 250px;
     left: 310px;
-    background-image: url(assets/uwwa.svg);
 }
 
 .quiz-app {
     top: 470px;
     left: 80px;
-    background-image: url(assets/quizine.svg);
 }
 
 .weather-app {
     top: 570px;
     left: 350px;
-    background-image: url(assets/weather.svg);
 }
 
 .current-skills {
     top: 100px;
     right: 50px;
-    background-image: url(assets/skills.svg);
+}
+
+.skill-content{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.skill-content h1 {
+    font-family: 'permanent marker', cursive;
+    font-size: 32px; 
+    font-weight: regular;
+    text-align: left;
+    margin-bottom: -5px;
+}
+
+.skill-content h2 {
+    font-family: 'caveat', cursive;
+    font-size: 28px; 
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+.skill-content li {
+    font-family: 'caveat', cursive;
+    font-size: 20px;
+    margin-bottom: 6px;
+    text-align: left;
 }
 
 .cv {
     top: 310px;
     right: 310px;
+    background-color: transparent;
     background-image: url(assets/cv.svg);
 }
 
@@ -200,7 +267,7 @@ svg {
     top: 0px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(229, 229, 229);
+    background-color: rgb(255, 255, 255);
     color: black;
     padding: 5px 10px;
     border: 1px solid black;
@@ -209,4 +276,49 @@ svg {
     font-size: 14px;
     pointer-events: none;
     opacity: 0;
+}
+
+.startup-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1024px;
+    width: 1440px;
+    background-color: black;
+    color: white;
+    z-index: 10;
+}
+
+.animation-wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: amiri;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    letter-spacing: 50%;
+    padding: 50px;
+}
+
+.startup-animation .welcome {
+    color: rgb(255, 255, 255);
+    opacity: 100%;
+}
+
+.startup-animation .to {
+    color: #878787;
+    opacity: 100%;
+}
+
+.startup-animation .my {
+    color: #878787;
+    opacity: 100%;
+}
+
+.startup-animation .portfolio {
+    color: rgb(255, 0, 0);
+    opacity: 100%;
 }
